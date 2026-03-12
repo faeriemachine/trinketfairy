@@ -1,0 +1,47 @@
+---
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    addAllPagesToCollections: true
+layout: base.njk
+permalink: "/plush/tagged/{{ tag | slugify }}/index.html"
+eleventyComputed:
+    title: Plush tagged with "{{ tag }}"
+---
+<link rel="stylesheet" href="/css/directory.css{{ nocache }}" />
+
+<header>
+    {% include "partials/header.njk" %}
+</header>
+
+
+<main>
+    <article class="desc" style="text-align: center;">
+        <h2>{{ title }}</h2>
+        <p>View all plushies tagged with "{{ tag }}"</p>
+    </article>
+</main>
+
+<article class="plushies" style="margin-top: 1em;">
+    <div class="flex">
+            <!-- Where images go -->
+        <!-- Images displayed here -->
+        {% for post in collections[tag] | reverse %}
+         <a href="{{ post.url }}">
+            <figure>
+                <img class="thumb" src="/img/thumbnail/{{ post.data.thumbnail }}" loading="lazy" />
+        </a>
+                <figcaption>
+                    {{ post.data.title }} • {{ post.data.pronouns }}
+                </figcaption>
+            </figure>
+        {% endfor %}
+    </div>
+</article>
+
+<footer>
+  {% include "partials/footer.njk" %}
+  {% block head %}{% endblock %}
+</footer>
+

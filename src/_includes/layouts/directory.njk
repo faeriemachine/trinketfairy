@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+<header>
+    {% include "partials/header.njk" %}
+</header>
+
+<body>
+  {{ content | safe }}
+
+
+<footer>
+  {% include "partials/footer.njk" %}
+  {% block head %}{% endblock %}
+</footer>
+
+
+
+  <script src="/js/updated-visitors.js{{ nocache }}"></script>
+</body>
+
