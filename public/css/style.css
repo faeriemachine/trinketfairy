@@ -23,6 +23,7 @@ html {
 
 body {
     color: white;
+    background-color: black;
     background-image:url('/img/bg.jpg');
         background-position: center;
         background-size: cover;
@@ -32,6 +33,7 @@ body {
     padding: 0;
     overflow:auto;
     overflow-x: hidden;
+    animation: all fadeIn 1s alternate;
 }
 
 .all{
@@ -138,6 +140,15 @@ main {
 }
 
 /* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in; /* remove infinite*/
+}
+
 #text {
   text-align: center;
   float: left;

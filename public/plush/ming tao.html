@@ -17,6 +17,9 @@
   <link href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
   <link href="/assets/fontawesome/css/brands.css" rel="stylesheet" />
 
+  <!-- preloader css -->
+  <link rel="stylesheet" href="/css/preloader.css" />
+
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,12 +31,19 @@
   
 </head>
 
+    
+<body onload="preloader()">
+  <div id="loader"></div>
+
+<div id="loaded">
 
 
-    <header>
-    <a href="/directory"><img class="logo" id="pop" src="/img/logo.png"></a>
+<header>
+    <a href="/directory">
+        <img class="logo" id="pop" src="/img/logo.png">
 
 
+    </a>
 </header>
 
 <div class="wrap">
@@ -49,7 +59,7 @@
 <div id="bio" class="city">
     <article class="plushinfo">
         <div class="photo">
-            <img class="image" src="../img/profile/Ming Tao.png" alt="Zenith">
+            <img class="image" src="../img/profile/Ming Tao.png" alt="Ming Tao">
         </div>
         <div class="bio">
             <h1>Ming Tao</h1>
@@ -314,9 +324,11 @@
             });
             exampleApi.open(); */
 </script>
+</body>
 
 
-
+</div>
+<script src="/js/preloader.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script>

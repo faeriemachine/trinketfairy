@@ -1,8 +1,17 @@
 ---
 layout: base.njk
 ---
+
+<body onload="preloader()">
+  <div id="loader"></div>
+
+<div id="loaded">
+
+
 <header>
-    {% include "partials/header.njk" %}
+    <a href="/directory">
+        {% include "partials/header.njk" %}
+    </a>
 </header>
 
 <div class="wrap">
@@ -110,4 +119,4 @@ layout: base.njk
             });
             exampleApi.open(); */
 </script>
-
+</body>

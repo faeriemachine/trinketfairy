@@ -1,7 +1,10 @@
 ---
 layout: base.njk
 ---
-<body>
+<body onload="preloader()">
+  <div id="loader"></div>
+
+<div id="loaded">
 
 <nav>
   {% include 'partials/nav.njk' %}
@@ -20,7 +23,7 @@ layout: base.njk
 </footer>
 
 
-
+</div>
   <script src="/js/updated-visitors.js{{ nocache }}"></script>
 </body>
 
