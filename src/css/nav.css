@@ -106,6 +106,7 @@ label #btn,label #cancel{
 
 #btn:hover, #cancel:hover {
   background-color: #555;
+  box-shadow: 0 0 0 6px #555;
 }
 
 label #cancel{
