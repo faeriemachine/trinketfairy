@@ -155,3 +155,44 @@
   text-align: center;
   width: 50%;
 }
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+
+  .wrap{
+    width: auto;
+  }
+
+  .tabs {
+    position: initial;
+  }
+
+  .tabs a {
+    display: initial;
+    width: fit-content;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin: auto;
+  }
+
+  .bio {
+    width: 100%;
+  }
+
+  .photo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .loretitle{
+    left: -70px;
+  }
+
+  .lore {
+    display: block;
+    padding: 5px;
+    width: auto;
+    margin: 8px;
+  }
+
+}
