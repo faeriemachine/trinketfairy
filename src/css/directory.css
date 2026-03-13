@@ -40,4 +40,13 @@ figure:hover {
   transform: scale(1.15);
 }
 
+/* Mobile */
+@media only screen and (max-width: 980px) {
+
+  figure {
+    margin: 5px 8px;
+  }
+
+}
+
 

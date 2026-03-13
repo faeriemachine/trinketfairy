@@ -9,7 +9,7 @@
 .loretitle{
   position: relative;
   top: -25px;
-  left: -160px;
+  left: -100px;
 }
 
 .galtitle{
@@ -186,7 +186,7 @@
   }
 
   .loretitle{
-    left: -70px;
+    left: 0;
   }
 
   .lore {

@@ -49,7 +49,7 @@
 
 /* Tag Menus */
 details > summary {
-    background-color: #D12C3A;
+    background-color: var(--border);
     color: white;
     padding: 8px;
     font-weight: bold;
@@ -63,11 +63,15 @@ details > ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -35px;
 }
 
 details > li {
   display: inline;
-  margin-top: 5px;
+}
+
+.tags{
+    margin: 2px;
 }
 
 /* Optional: Style the caret down icon */

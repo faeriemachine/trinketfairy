@@ -34,6 +34,14 @@ body {
     overflow-x: hidden;
 }
 
+.all{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Headers */
 h1 {
   text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -2px 2px 2px #000, 3px 3px 2px #000;
@@ -47,6 +55,10 @@ h1 {
 
 h2 {
   margin: 5px;
+}
+
+h3{
+  margin: 15px;
 }
 
 /* Links */
