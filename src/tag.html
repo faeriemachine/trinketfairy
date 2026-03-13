@@ -7,9 +7,13 @@ pagination:
 layout: base.njk
 permalink: "/plush/tagged/{{ tag | slugify }}/index.html"
 eleventyComputed:
-    title: Plush tagged with "{{ tag }}"
+    title: Plush tagged with "#{{ tag }}"
 ---
 <link rel="stylesheet" href="/css/directory.css{{ nocache }}" />
+
+<nav>
+  {% include 'partials/nav.njk' %}
+</nav>
 
 <header>
     {% include "partials/header.njk" %}
@@ -19,7 +23,7 @@ eleventyComputed:
 <main>
     <article class="desc" style="text-align: center;">
         <h2>{{ title }}</h2>
-        <p>View all plushies tagged with "{{ tag }}"</p>
+        <p>You are viewing all plushies tagged with "#{{ tag }}"</p>
     </article>
 </main>
 

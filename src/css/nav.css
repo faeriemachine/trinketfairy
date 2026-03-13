@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff var(--bg);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid var(--bg);
+  }
+
+
+/* Sidebar styling */
+.sidebar{
+    position: fixed;
+    text-align: center;
+    width: 250px;
+    left: -260px;
+    height: 100%;
+    border: 3px dashed var(--border);
+    box-shadow: 0 0 0 6px var(--bg);
+    background: var(--bg);
+    overflow: auto;
+    overflow-x: auto;
+    z-index: 1000;
+}
+
+.sidebar header{
+  text-align: center;
+  user-select: none;
+  margin: 12px;
+}
+
+#check{
+  display: none;
+}
+
+/* Tag Menus */
+details > summary {
+    background-color: #D12C3A;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 85%;
+    margin: 12px auto;
+}
+
+details > ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+details > li {
+  display: inline;
+  margin-top: 5px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  margin-top: 20px;
+}
+
+/* Img elements */
+.navlogo{
+    width:100%;
+}
+
+
+/* Label styling */
+label #btn,label #cancel{
+    position: fixed;
+    left: 5px;
+    cursor: pointer;
+    color: white;
+    margin: 15px 30px;
+    font-size: 29px;
+    background: var(--bg);
+    border: 3px dashed var(--border);
+    box-shadow: 0 0 0 6px var(--bg);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    z-index: 1000;
+}
+
+#btn:hover, #cancel:hover {
+  background-color: #555;
+}
+
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+#check:checked ~ label #btn{
+  margin-left: 270px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#check:checked ~ label #cancel{
+  margin-left: 270px;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (prefers-reduced-motion: no-preference) and (-moz-bool-pref: "userChrome.decoration.animate") {
+  button {
+    transition: none !important;
+  }
+}
