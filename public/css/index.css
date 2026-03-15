@@ -1,0 +1,15 @@
+.link{
+  position: absolute;
+  font-size: 2em;
+  right: 8px;
+  bottom: -40px;
+  text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -2px 2px 2px #000, 3px 3px 2px #000;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+    .link{
+    font-size: 1.5em;
+    bottom: -35px;
+    }
+}
