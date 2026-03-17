@@ -141,6 +141,13 @@ main {
     z-index: 999;
 }
 
+/* Hover to show tooltip */
+.hovertxt {
+  font-weight: bold;
+  border-bottom: 1px dashed white;
+  position: relative;
+}
+
 /* Tooltip */
 .tippy-box[data-theme~='tf'] {
   background-color: var(--txt-shadow);
