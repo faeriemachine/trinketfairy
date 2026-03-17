@@ -82,6 +82,29 @@ a:hover{
   text-shadow: -1px -1px 0 var(--txt-shadow), 1px -1px 0 var(--txt-shadow), -1px 1px 0 var(--txt-shadow), 1px 1px 0 var(--txt-shadow);
 }
 
+/* Font Awesome Outlinks */
+.outlink {
+    text-decoration: none;
+    font-size: 1.85em;
+    width: 1.75em;
+    background-color: var(--border);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.outlink:hover{
+    transform: scale(1.1);
+    background-color: var(--link);
+    color: white;
+    text-decoration:none;
+}
+
+.outlink a{
+    color: white;
+}
+
+
 /* Header */
 header {
   text-align: center;
@@ -120,7 +143,7 @@ main {
 
 /* Tooltip */
 .tippy-box[data-theme~='tf'] {
-  background-color: #000000;
+  background-color: var(--txt-shadow);
   color: white;
   font-weight: bold;
   font-size: .75em;
@@ -132,7 +155,7 @@ main {
 }
 
 .tippy-box[data-theme~='tf'][data-placement^='top'] > .tippy-arrow::before {
-  border-top-color: #000000;
+  border-top-color: var(--txt-shadow);
 }
 
 .tippy-box[data-inertia][data-state='visible'] {
