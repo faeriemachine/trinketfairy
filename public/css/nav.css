@@ -63,7 +63,8 @@ details > ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -35px;
+  margin-left: -20px;
+  margin-right: 17px;
 }
 
 details > li {
