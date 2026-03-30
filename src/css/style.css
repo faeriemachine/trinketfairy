@@ -90,6 +90,7 @@ a:hover{
     background-color: var(--border);
     color: white;
     padding: 8px;
+    margin: 4px;
     border-radius: 10px;
 }
 
