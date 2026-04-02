@@ -40,6 +40,17 @@ figure:hover {
   transform: scale(1.15);
 }
 
+dt{
+  margin: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+dd{
+  margin: 10px;
+}
+
 /* Mobile */
 @media only screen and (max-width: 980px) {
 
