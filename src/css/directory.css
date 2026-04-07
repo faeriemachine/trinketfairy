@@ -45,6 +45,7 @@ dt{
   font-size: 1.4em;
   font-weight: bold;
   font-style: italic;
+  border-bottom: 3px dashed var(--border);
 }
 
 dd{
