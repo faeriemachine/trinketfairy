@@ -16,7 +16,9 @@ eleventyComputed:
 </nav>
 
 <header>
-    {% include "partials/header.njk" %}
+    <a href="/directory">
+        {% include "partials/header.njk" %}
+    </a>
 </header>
 
 
@@ -31,7 +33,7 @@ eleventyComputed:
     <div class="flex">
             <!-- Where images go -->
         <!-- Images displayed here -->
-        {% for post in collections[tag] | reverse %}
+        {% for post in collections[tag] %}
          <a href="{{ post.url }}">
             <figure>
                 <img class="thumb" src="/img/thumbnail/{{ post.data.thumbnail }}" loading="lazy" />
