@@ -1,0 +1,273 @@
+---
+layout: base.njk
+---
+<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
+
+<body onload="preloader()">
+  <div id="loader"></div>
+
+<div id="loaded">
+
+<header>
+    <a href="/directory">
+        {% include "partials/header.njk" %}
+    </a>
+</header>
+
+<div class="wrap">
+        <div class="tabs">
+            <a onclick="openCity('bio')">Bio</a>
+            <a onclick="openCity('lore')">Lore</a>
+            <a onclick="openCity('gallery')">Gallery</a>
+        </div>
+    <main>
+        <section class="plushcontent">
+            <div id="bio" class="city">
+                <article class="plushinfo">
+                    <div class="photo">
+                        <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
+                    </div>
+                    <div class="bio">
+                        <h1>{{ title }}</h1>
+                        <div class="info">
+                            <div id="text" class="field">Pronouns</div> <br>
+                            <span class="answer">
+                                <div class="side">
+                                    <i class="fa-solid fa-comments"></i>
+                                </div>
+                                {{ bio.pronouns }}
+                            </span>
+                        </div>
+                        <div class="info">
+                            <div id="text" class="field">Brand</div> <br>
+                            <span class="answer">
+                                <div class="side">
+                                    <i class="fa-solid fa-trademark"></i>
+                                </div>
+                                {{ bio.brand }}
+                            </span>
+                        </div>
+                        <div class="info">
+                            <div id="text" class="field">Collection</div> <br>
+                            <span class="answer">
+                                <div class="side">
+                                    <i class="fa-solid fa-folder-open"></i>
+                                </div>
+                                {{ bio.collection }}
+                            </span>
+                        </div>
+                        <div class="info">
+                            <div id="text" class="field">Original Name</div> <br>
+                            <span class="answer">
+                                <div class="side">
+                                    <i class="fa-solid fa-address-card"></i>
+                                </div>
+                                {{ bio.name }}
+                            </span>
+                        </div>
+                        <div class="info">
+                            <div id="text" class="field">Species</div> <br>
+                            <span class="answer">
+                                <div class="side">
+                                    <i class="fa-solid fa-paw"></i>
+                                </div>
+                                {{ bio.species }}
+                            </span>
+                        </div>
+                        <div class="info">
+                            <div id="text" class="field">Acquired</div> <br>
+                            <span class="answer">
+                                <div class="side">
+                                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                                </div>
+                                {{ bio.acquired }}
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="plushdesc">
+                    <h2>Description</h2>
+                    {% for item in bio.description %}
+                    <p>
+                        {{ item }}
+                    </p>
+                    {% endfor %}
+
+
+                    <h2>Extra</h2>
+                    {% for item in bio.extra %}
+                    <ul>
+                        <li>{{ item }}</li>
+                    </ul>
+                    {% endfor %}
+                </article>
+            </div>
+
+            <div id="lore" class="city" style="display:none">
+                <article class="plushdesc">
+                    <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
+                    <h1 class="loretitle">{{ lore.name }} {{ lore.emoji }}</h1>
+
+                    <article class="trivia">
+                        <span class="answer lore">
+                                <div class="side">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                </div>
+                                {{ lore.age }}
+                        </span>
+
+                        <span class="answer lore">
+                                <div class="side">
+                                    <i class="fa-solid fa-mars-and-venus"></i>
+                                </div>
+                                {{ lore.gender }}
+                        </span>
+
+                        <span class="answer lore">
+                                <div class="side">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                {{ lore.orientation }}
+                        </span>
+
+                        <span class="answer lore">
+                                <div class="side">
+                                    <i class="fa-solid fa-briefcase-medical"></i>
+                                </div>
+                                {{ lore.disabilities }}
+                        </span>
+                    </article>
+
+                    <hr>
+
+                    <p>
+                        {{ lore.bio }}
+                    </p>
+                    <p>
+                        <strong>Likes:</strong>
+                        {% for item in lore.likes %}
+                            {{ item }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+
+                    </p>
+                </article>
+            </div>
+
+
+            <div id="gallery" class="city" style="display:none">
+                <article style="text-align: center;">
+                    <h1 class="galtitle">Gallery</h1>
+
+                    <p>
+                        Ordered in reverse-chronological order. <br>
+                        Click each thumbnail to see the full image.
+                    </p>
+                </article>
+
+                <article class="images">
+
+                    {% for item in gallery.images %}
+                        <a href="{{ item.fullimg }}" class="glightbox">
+                            <img class="galimg" src="{{ item.thumbnail }}" alt="image" />
+                        </a>
+                    {% endfor %}
+
+                </article>
+            </div>
+
+        </section>
+
+                <hr>
+    <article class="plushtags">
+        <h3>Tagged as:</h3>
+        <i class="fa-solid fa-tag"></i>
+        {% for tag in tags %}
+            | <a href="/plush/tagged/{{ tag | slugify }}">#{{tag}}</a>
+        {% endfor %}
+    </article>
+    <article class="pagination">
+    <!-- Pagination -->
+        <p>
+        {% set previousPost = collections.postsAscending | getPreviousCollectionItem(page) %}
+        {% set nextPost = collections.postsAscending | getNextCollectionItem(page) %}
+        {% include "partials/paginate.njk" %}
+        </p>
+    </article>
+    </main>
+</div>
+
+<footer>
+  {% include "partials/footer.njk" %}
+  {% block head %}{% endblock %}
+</footer>
+
+<script src="/js/city.js{{ nocache }}"></script>
+
+<link rel="stylesheet" href="/css/glightbox.css" />
+
+<script src="/js/glightbox.min.js"></script>
+<script type="text/javascript">
+    import '/js/glightbox.js';
+</script>
+<script>
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        // If player is not ready
+                        player.on('ready', (event) => {
+                            // Do something when video is ready
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            /* var exampleApi = GLightbox({ selector: null });
+            exampleApi.insertSlide({
+                href: 'https://picsum.photos/1200/800',
+            });
+            exampleApi.insertSlide({
+                width: '500px',
+                content: '<p>Example</p>'
+            });
+            exampleApi.insertSlide({
+                href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+            });
+            exampleApi.insertSlide({
+                width: '200vw',
+                content: document.getElementById('inline-example')
+            });
+            exampleApi.open(); */
+</script>
+</body>

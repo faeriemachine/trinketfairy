@@ -33,6 +33,7 @@ figcaption{
   text-align: center;
   padding: 5px 0px;
   font-size: 1em;
+  text-transform: capitalize;
   border: 1px solid black;
 }
 
