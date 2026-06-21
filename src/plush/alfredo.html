@@ -1,177 +1,60 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Alfredo
 pronouns: he/zzz
 thumbnail: alfredo.png
+banner: Alfredo.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "cat", "feline", "sugarboo co", "disney springs", "in store"]
+tags:
+    - jellycat
+    - cat
+    - feline
+    - sugarboo co
+    - disney springs
+    - in store
+bio:
+    pronouns: He/him + zzz/zzz's
+    brand: Jellycat
+    collection: Amore
+    name: Cream cat
+    species: Domestic cat
+    acquired: Sugarboo & Co.
+    description:
+        - Physical description text goes here...
+    extra:
+        - N/A
+
+lore:
+    name: Alfredo
+    emoji: 🍝💤
+    age: 26 yrs
+    gender: Nonbinary
+    orientation: Queer
+    disabilities: Severe ME
+    bio:
+        - Mended Wings' resident stoner and wannabe chef, Alfredo enjoys making meals for his peers when his health allows him.
+    likes:
+        - Cooking & baking
+        - Drama shows
+        - Reading
+        - Writing
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/alfredo/alfredo8.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo8.png
+        - fullimg: /img/profile/gallery/alfredo/alfredo7.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo7.png
+        - fullimg: /img/profile/gallery/alfredo/alfredo6.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo6.png
+        - fullimg: /img/profile/gallery/alfredo/alfredo5.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo5.png
+        - fullimg: /img/profile/gallery/alfredo/alfredo4.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo4.png
+        - fullimg: /img/profile/gallery/alfredo/alfredo3.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo3.png
+        - fullimg: /img/profile/gallery/alfredo/alfredo2.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo2.png
+        - fullimg: /img/profile/gallery/alfredo/alfredo1.jpg
+          thumbnail: /img/profile/gallery/alfredo/thumbnail/alfredo1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/zzz
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Amore (Cream cat)
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Domestic cat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Sugarboo & Co
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🍝💤</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    26 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Nonbinary
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Queer
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    Severe ME
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Mended Wings' resident stoner
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Cooking & baking, drama shows, reading, writing
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-<a href="/img/profile/gallery/alfredo/alfredo8.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo8.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/alfredo/alfredo7.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo7.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/alfredo/alfredo6.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo6.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/alfredo/alfredo5.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo5.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/alfredo/alfredo4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/alfredo/alfredo3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/alfredo/alfredo2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/alfredo/alfredo1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/alfredo/thumbnail/alfredo1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

@@ -1,189 +1,65 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Play-Doh
 pronouns: they/it
 thumbnail: playdoh.png
+banner: Play-Doh.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "dragon", "mythical", "online"]
+tags:
+    - jellycat
+    - dragon
+    - mythical
+    - online
+bio:
+    pronouns: They/them + it/its
+    brand: Jellycat
+    collection: Dragons
+    name: Dexter
+    species: Dragon
+    acquired: Jellycat online store
+    description:
+        - Physical description text goes here...
+    extra:
+        - Extra info goes here...
+
+lore:
+    name: Play-Doh
+    emoji: 💙♥️
+    age: 140 yrs
+    gender: Xenogender
+    orientation: Asexual
+    disabilities: Autism
+    bio:
+        - Young deity responsible for protecting the world's children. Often found near playgrounds.
+    likes:
+        - Hoarding crayons
+        - playing tag
+        - ice cream cake
+        - summer
+        - making sand castles
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/play-doh/play-doh11.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh11.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh10.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh10.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh9.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh9.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh8.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh8.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh7.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh7.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh6.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh6.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh5.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh5.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh4.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh4.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh3.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh3.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh2.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh2.png
+        - fullimg: /img/profile/gallery/play-doh/play-doh1.jpg
+          thumbnail: /img/profile/gallery/play-doh/thumbnail/play-doh1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    They/them + it/its
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Dragons
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    Dexter
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Dragon
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Jellycat online store
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 💙♥️</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    140 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Xenogender
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Asexual
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    Autism
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-           Young deity responsible for protecting the world's children. Often found near playgrounds
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Hoarding crayons, playing tag, ice cream cake, summer, making sand castles
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/play-doh/play-doh11.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh11.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh10.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh10.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh9.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh9.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh8.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh8.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh7.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh7.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh6.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh6.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh5.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh5.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/play-doh/play-doh1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/play-doh/thumbnail/play-doh1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

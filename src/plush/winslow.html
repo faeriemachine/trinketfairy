@@ -1,176 +1,54 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Winslow
-pronouns: He/him
+pronouns: he/him
 thumbnail: winslow.png
+banner: Winslow.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "sabre tooth tiger", "feline", "local small business", "in store"]
+tags:
+    - jellycat
+    - sabre tooth tiger
+    - feline
+    - local small business
+    - in store
+bio:
+    pronouns: He/him
+    brand: Jellycat
+    collection: N/A
+    name: Stellan sabre tooth
+    species: Sabre tooth tiger
+    acquired: Local baby store
+    description:
+        - Physical description text goes here...
+    extra:
+        - Named after Winslow Leach from the movie Phantom Of The Paradise.
+        - Bought as a gift for myself to celebrate getting on disability benefits.
+
+lore:
+    name: Winslow
+    emoji: 🦷🐯
+    age: 42 yrs
+    gender: Cis man
+    orientation: Gay
+    disabilities: MS
+    bio:
+        - Retired blacksmith. Crushing on Roscoe.
+    likes:
+        - Sculpting
+        - Drawing & painting
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/winslow/winslow6.jpg
+          thumbnail: /img/profile/gallery/winslow/thumbnail/winslow6.png
+        - fullimg: /img/profile/gallery/winslow/winslow5.gif
+          thumbnail: /img/profile/gallery/winslow/thumbnail/winslow5.png
+        - fullimg: /img/profile/gallery/winslow/winslow4.jpg
+          thumbnail: /img/profile/gallery/winslow/thumbnail/winslow4.png
+        - fullimg: /img/profile/gallery/winslow/winslow3.jpg
+          thumbnail: /img/profile/gallery/winslow/thumbnail/winslow3.png
+        - fullimg: /img/profile/gallery/winslow/winslow2.jpg
+          thumbnail: /img/profile/gallery/winslow/thumbnail/winslow2.png
+        - fullimg: /img/profile/gallery/winslow/winslow1.jpg
+          thumbnail: /img/profile/gallery/winslow/thumbnail/winslow1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    Stellan sabre tooth
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Sabre Tooth Tiger
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Jellycat online store
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-        <h2>Extra</h2>
-
-        <ul>
-            <li>Named after Winslow Leach from the movie <a href="https://en.wikipedia.org/wiki/Phantom_of_the_Paradise">Phantom Of The Paradise</a>.</li>
-            <li>Bought as a gift for myself to celebrate getting on benefits.</li>
-        </ul>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🦷🐯</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    42 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Cis man
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Gay
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    Multiple Sclerosis
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Retired blacksmith. Crushing on Roscoe.
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Sculpting, drawing and painting
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/winslow/winslow6.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/winslow/thumbnail/winslow6.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/winslow/winslow5.gif" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/winslow/thumbnail/winslow5.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/winslow/winslow4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/winslow/thumbnail/winslow4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/winslow/winslow3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/winslow/thumbnail/winslow3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/winslow/winslow2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/winslow/thumbnail/winslow2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/winslow/winslow1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/winslow/thumbnail/winslow1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

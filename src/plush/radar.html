@@ -1,168 +1,56 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Radar
 pronouns: he/him
 thumbnail: radar.png
+banner: Placeholder.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["wild republic", "cuddlekins", "bat", "witte museum", "gifted"]
+tags:
+    - wild republic
+    - cuddlekins
+    - bat
+    - witte museum
+    - gifted
+bio:
+    pronouns: He/him
+    brand: Wild Republic
+    collection: Cuddlekins
+    name: N/A
+    species: Little brown bat
+    acquired: Witte Museum of San Antonio
+    description:
+        - Physical description text goes here...
+    extra:
+        - Named after Radar O'Reilly from M*A*S*H.
+        - Gifted by my partner during our first time meeting in real life.
+
+lore:
+    name: Radar
+    emoji: 📻️🦇
+    age: 19 yrs
+    gender: Trans man
+    orientation: Gay
+    disabilities: ASD & GAD
+    bio:
+        - Old-timey late night radio show host. Technology repairman of Mended Wings. Has a stutter. Traditional, nerdy, jittery.
+    likes:
+        - Jazz music
+        - old ech
+        - vintage furniture
+        - history
+        - cryptography
+        - writing sheet music
+        - quantum physics
+        - nighttime
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/radar/radar4.jpg
+          thumbnail: /img/profile/gallery/radar/thumbnail/radar4.png
+        - fullimg: /img/profile/gallery/radar/radar3.jpg
+          thumbnail: /img/profile/gallery/radar/thumbnail/radar3.png
+        - fullimg: /img/profile/gallery/radar/radar2.jpg
+          thumbnail: /img/profile/gallery/radar/thumbnail/radar2.png
+        - fullimg: /img/profile/gallery/radar/radar1.jpg
+          thumbnail: /img/profile/gallery/radar/thumbnail/radar1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                   Wild Republic
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Cuddlekins
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Little brown bat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                   Gifted by my partner, Witte Museum of San Antonio
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-        <h2>Extra</h2>
-
-        <ul>
-            <li>Named after Radar O'Reilly from <a href="https://en.wikipedia.org/wiki/M*A*S*H_(TV_series)">M*A*S*H</a>. </li>
-        </ul>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/placeholder.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 📻️🦇</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                   19 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Trans man
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Gay
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ASD & GAD
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-           Old-timey late night radio show host. Technology repairman of Mended Wings. Has a stutter. Traditional, nerdy, and jittery.
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Jazz music, old tech, vintage furniture, history, cryptography, writing sheet music, quantum physics, nighttime
-        </p>
-
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/radar/radar4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/radar/thumbnail/radar4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/radar/radar3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/radar/thumbnail/radar3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/radar/radar2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/radar/thumbnail/radar2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/radar/radar1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/radar/thumbnail/radar1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

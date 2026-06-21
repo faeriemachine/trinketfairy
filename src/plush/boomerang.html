@@ -1,181 +1,58 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Boomerang
-pronouns: She/her
+pronouns: she/her
 thumbnail: boomerang.png
+banner: Boomerang.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "bat", "online"]
+tags:
+    - jellycat
+    - bat
+    - online
+bio:
+    pronouns: She/her
+    brand: Jellycat
+    collection: Bashfull (small)
+    name: N/A
+    species: Bat
+    acquired: Jellycat online store
+    description:
+        - Physical description text goes here...
+    extra:
+        - N/A
+
+lore:
+    name: Boomerang
+    emoji: 🪃🦇
+    age: 16 yrs
+    gender: Cis girl
+    orientation: Lesbian
+    disabilities: Autism
+    bio:
+        - Siblings with Liquorice.
+    likes:
+        - Interest
+        - interest
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/boomerang/boomerang9.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang9.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang8.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang8.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang7.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang7.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang6.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang6.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang5.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang5.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang4.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang4.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang3.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang3.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang2.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang2.png
+        - fullimg: /img/profile/gallery/boomerang/boomerang1.jpg
+          thumbnail: /img/profile/gallery/boomerang/thumbnail/boomerang1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    She/her
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Bashful small
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Bat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Jellycat online store
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
 
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🪃🦇</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    16 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Cis girl
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Lesbian
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    Autism
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Siblings with <a href="/plush/liquorice">Liquorice</a>.
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Interest
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-       <a href="/img/profile/gallery/boomerang/boomerang9.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang9.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang8.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang8.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang7.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang7.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang6.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang6.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang5.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang5.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/boomerang/boomerang1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/boomerang/thumbnail/boomerang1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

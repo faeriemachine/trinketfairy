@@ -1,153 +1,46 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Cranberry
 pronouns: she/her
 thumbnail: cranberry.png
+banner: Placeholder.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "cat", "feline", "secondhand", "ebay", "online"]
+tags:
+    - jellycat
+    - cat
+    - feline
+    - secondhand
+    - ebay
+    - online
+bio:
+    pronouns: She/her
+    brand: Jellycat
+    collection: Cordy Roy
+    name: N/A
+    species: Domestic cat
+    acquired: Ebay
+    description:
+        - Physical description text goes here...
+    extra:
+        - Extra info goes here...
+
+lore:
+    name: Cranberry
+    emoji: 🍒🐱
+    age: ??yrs
+    gender: ????
+    orientation: ????
+    disabilities: ????
+    bio:
+        - Bio goes here
+    likes:
+        - Interest
+        - interest
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/cranberry/cranberry2.jpg
+          thumbnail: /img/profile/gallery/cranberry/thumbnail/cranberry2.png
+        - fullimg: /img/profile/gallery/cranberry/cranberry1.jpg
+          thumbnail: /img/profile/gallery/cranberry/thumbnail/cranberry1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="Cranberry">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    She/her
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Cordy Roy
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Domestic cat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Ebay
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/placeholder.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🍒🐱</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    ?? yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    ???
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    ???
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ???
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Description
-        </p>
-
-        <p>
-            <strong>Likes:</strong>
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/cranberry/cranberry2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/cranberry/thumbnail/cranberry2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/cranberry/cranberry1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/cranberry/thumbnail/cranberry1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

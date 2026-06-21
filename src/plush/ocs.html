@@ -1,163 +1,55 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Orange Cream Soda
 pronouns: she/her
 thumbnail: orangecreamsoda.png
+banner: Placeholder.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["b-toys", "happyhues", "rabbit", "lagomorph", "gifted", "secondhand", "thrifted"]
+tags:
+    - b-toys
+    - happyhues
+    - rabbit
+    - lagomorphs
+    - gifted
+    - secondhand
+    - thrifted
+bio:
+    pronouns: She/her
+    brand: Brand name
+    collection: Collection Name
+    name: Original Name
+    species: Species
+    acquired: Gifted, sourced from thrift
+    description:
+        - Physical description text goes here...
+    extra:
+        - Gifted to me by my partner.
+
+lore:
+    name: O.C.S.
+    emoji: 🍊🎉
+    age: 27 yrs
+    gender: Trans woman
+    orientation: Bisexual
+    disabilities: ASD
+    bio:
+        - Professional dancer and DJ, like to travel to different festivals. Caregiver at Mended Wings. Peppy, optimistic, loving.
+    likes:
+        - Happy hardcore
+        - fashion
+        - milkshakes & smoothies
+        - pampering her loved ones
+        - travelling
+        - warm weather
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/ocs/ocs4.jpg
+          thumbnail: /img/profile/gallery/ocs/thumbnail/ocs4.png
+        - fullimg: /img/profile/gallery/ocs/ocs3.jpg
+          thumbnail: /img/profile/gallery/ocs/thumbnail/ocs3.png
+        - fullimg: /img/profile/gallery/ocs/ocs2.jpg
+          thumbnail: /img/profile/gallery/ocs/thumbnail/ocs2.png
+        - fullimg: /img/profile/gallery/ocs/ocs1.jpg
+          thumbnail: /img/profile/gallery/ocs/thumbnail/ocs1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    She/her
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                   B-Toys
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Happy Hues (Coral Cutie)
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Rabbit
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Gifted by my partner, thrifted
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/placeholder.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">O.C.S. 🍊🎉</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                   27 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Trans woman
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Bisexual
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ASD
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-           Professional dancer and DJ, like to travel to different festivals. Caregiver at Mended Wings.
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Happy Hardcore, fashion, milkshakes and smoothies, pampering her loved ones, travelling, warm weather
-        </p>
-
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/ocs/ocs4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ocs/thumbnail/ocs4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/ocs/ocs3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ocs/thumbnail/ocs3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/ocs/ocs2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ocs/thumbnail/ocs2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/ocs/ocs1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ocs/thumbnail/ocs1.png" alt="image" />
-        </a>
-
-
-    </article>
-</div>

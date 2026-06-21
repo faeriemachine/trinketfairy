@@ -1,163 +1,49 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Ming Tao
 pronouns: he/him
 thumbnail: mingtao.png
+banner: Ming Tao.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["prime shiba", "small business", "husky", "dog", "canine", "online"]
+tags:
+    - prime shiba
+    - small business
+    - husky
+    - dog
+    - canine
+    - online
+bio:
+    pronouns: He/him
+    brand: Prime Shiba
+    collection: 15 inch dogs
+    name: Zayn
+    species: Domestic dog (piebald husky)
+    acquired: Prime Shiba online store
+    description:
+        - Physical description text goes here...
+    extra:
+        - Extra info goes here...
+
+lore:
+    name: Ming Tao
+    emoji: 🌊🌺
+    age: 24 yrs
+    gender: Cis man
+    orientation: Gay
+    disabilities: ????
+    bio:
+        - Bio goes here
+    likes:
+        - Swimming
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/ming tao/ming tao4.jpg
+          thumbnail: /img/profile/gallery/ming tao/thumbnail/ming tao4.png
+        - fullimg: /img/profile/gallery/ming tao/ming tao3.jpg
+          thumbnail: /img/profile/gallery/ming tao/thumbnail/ming tao3.png
+        - fullimg: /img/profile/gallery/ming tao/ming tao2.jpg
+          thumbnail: /img/profile/gallery/ming tao/thumbnail/ming tao2.png
+        - fullimg: /img/profile/gallery/ming tao/ming tao1.jpg
+          thumbnail: /img/profile/gallery/ming tao/thumbnail/ming tao1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Prime Shiba
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    15in dogs
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    Zayn
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                   Domestic dog (Piebald Husky)
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Prime Shiba online store
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🌊🌺</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                   24 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Cis man
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    ???
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ???
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Description
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Interest
-        </p>
-
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/ming tao/ming tao4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ming tao/thumbnail/ming tao4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/ming tao/ming tao3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ming tao/thumbnail/ming tao3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/ming tao/ming tao2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ming tao/thumbnail/ming tao2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/ming tao/ming tao1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/ming tao/thumbnail/ming tao1.png" alt="image" />
-        </a>
-
-
-    </article>
-</div>

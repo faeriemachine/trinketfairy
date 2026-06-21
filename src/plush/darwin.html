@@ -1,153 +1,50 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Darwin
 pronouns: he/him
 thumbnail: darwin.png
+banner: Darwin.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "dinosaur", "prehistoric", "local small business", "in store"]
+tags:
+    - jellycat
+    - dinosaur
+    - prehistoric
+    - local small business
+    - in store
+bio:
+    pronouns: He/him
+    brand: Jellycat
+    collection: N/A
+    name: Douglas Dino (Little)
+    species: Dinosaur
+    acquired: Local baby store
+    description:
+        - Physical description text goes here...
+    extra:
+        - Extra info goes here...
+
+lore:
+    name: Darwin
+    emoji: 🗺️🦕
+    age: 26 yrs
+    gender: Cis man
+    orientation: Bisexual
+    disabilities: ADHD
+    bio:
+        - Journalist & photographer, works on the Mended Wings Daily newspaper when he isn't traveling. Vegetarian
+    likes:
+        - Warm weather
+        - plants & succulents
+        - beaches
+        - roller skating
+        - kiwis & pineapples
+        - comedy shows
+        - meeting new people
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/darwin/darwin2.jpg
+          thumbnail: /img/profile/gallery/darwin/thumbnail/darwin2.png
+        - fullimg: /img/profile/gallery/darwin/darwin1.jpg
+          thumbnail: /img/profile/gallery/darwin/thumbnail/darwin1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    Douglas Dino Little
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Dinosaur
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Local baby store
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🗺️🦕</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    26 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Cis man
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Bisexual
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ADHD
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Journalist & photographer, works on the Mended Wings Daily newspaper when he isn't traveling. Vegetarian
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Warm weather, plants and succulents, beaches, roller skating, kiwis and pineapples, comedy shows, roller skating, meeting new people
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/darwin/darwin2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/darwin/thumbnail/darwin2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/darwin/darwin1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/darwin/thumbnail/darwin1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

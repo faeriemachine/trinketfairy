@@ -1,169 +1,54 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Snails
 pronouns: he/quack
 thumbnail: snails.png
+banner: Snails.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "duck", "bird", "indigo", "in store"]
+tags:
+    - jellycat
+    - bashful
+    - duck
+    - bird
+    - indigo
+    - in store
+bio:
+    pronouns: He/him + Quack/quacks
+    brand: Jellycat
+    collection: Bashful (medium)
+    name: N/A
+    species: Duckling
+    acquired: Indigo
+    description:
+        - Physical description text goes here...
+    extra:
+        - Extra info goes here...
+
+lore:
+    name: Snails
+    emoji: ☔️🐌
+    age: 34 yrs
+    gender: Cis man
+    orientation: Bisexual
+    disabilities: PTSD
+    bio:
+        - Bio goes here
+    likes:
+        - Interest
+        - interest
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/snails/snails6.jpg
+          thumbnail: /img/profile/gallery/snails/thumbnail/snails6.png
+        - fullimg: /img/profile/gallery/snails/snails5.jpg
+          thumbnail: /img/profile/gallery/snails/thumbnail/snails5.png
+        - fullimg: /img/profile/gallery/snails/snails4.jpg
+          thumbnail: /img/profile/gallery/snails/thumbnail/snails4.png
+        - fullimg: /img/profile/gallery/snails/snails3.jpg
+          thumbnail: /img/profile/gallery/snails/thumbnail/snails3.png
+        - fullimg: /img/profile/gallery/snails/snails2.jpg
+          thumbnail: /img/profile/gallery/snails/thumbnail/snails2.png
+        - fullimg: /img/profile/gallery/snails/snails1.jpg
+          thumbnail: /img/profile/gallery/snails/thumbnail/snails1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him + Quack/quacks
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Bashful medium
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Duckling
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Indigo
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} ☔️🐌</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    ?? yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Cis man
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Bisexual
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    PTSD
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Description
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Interest
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/snails/snails6.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/snails/thumbnail/snails6.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/snails/snails5.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/snails/thumbnail/snails5.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/snails/snails4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/snails/thumbnail/snails4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/snails/snails3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/snails/thumbnail/snails3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/snails/snails2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/snails/thumbnail/snails2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/snails/snails1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/snails/thumbnail/snails1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

@@ -1,157 +1,52 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Florence
-pronouns: he/she/they
+pronouns: she/he/they
 thumbnail: florence.png
+banner: Florence.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["gund", "cat", "unicorn", "feline", "in store", "indigo", "esc"]
+tags:
+    - gund
+    - cat
+    - feline
+    - in store
+    - indigo
+    - esc
+bio:
+    pronouns: She/her + he/him + they/them
+    brand: Gund
+    collection: N/A
+    name: Shimmer
+    species: Caticorn
+    acquired: Indigo
+    description:
+        -  Florence is a medium-sized, pastel multi-coloured caticorn, with splotches of many colours all over her body. He has a white muzzle, inner ears, belly, and paws. Their safety eyes have dark brown irises, and her nose and mouth are pink and embroidered. She has been customized with thread-sculpted paw toes. She has beans in her bottom, and is static in a sitting position.
+        - She wears a pink patterned cat collar, and various kandi jewellery around her neck and arms.
+    extra:
+        - Extra info goes here...
+
+lore:
+    name: Florence
+    emoji: 💐🦄
+    age: 25 yrs
+    gender: Genderfluid
+    orientation: Gay
+    disabilities: ASD, OCD
+    bio:
+        -  She lives in the nearby enchanted forest, and has the ability to charm anyone with his beautiful eyes. Aloof, quiet, and passionate.
+    likes:
+        - Tarot
+        - dream interpreting
+        - Celtic folklore & fairytales
+        - plants & fungi
+        - fruity cocktails
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/florence/florence3.jpg
+          thumbnail: /img/profile/gallery/florence/thumbnail/florence3.png
+        - fullimg: /img/profile/gallery/florence/florence2.jpg
+          thumbnail: /img/profile/gallery/florence/thumbnail/florence2.png
+        - fullimg: /img/profile/gallery/florence/florence1.jpg
+          thumbnail: /img/profile/gallery/florence/thumbnail/florence1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="Florence">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    She/her + he/him + they/them
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Gund
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    Shimmer
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Caticorn
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Indigo
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-        <h2>Description</h2>
-        <p>
-            Florence is a medium-sized, pastel multi-coloured caticorn, with splotches of many colours all over her body. He has a white muzzle, inner ears, belly, and paws. Their safety eyes have dark brown irises, and her nose and mouth are pink and embroidered. She has been customized with thread-sculpted paw toes. She has beans in her bottom, and is static in a sitting position.
-        </p>
-        <p>
-            She wears a pink patterned cat collar, and various kandi jewellery around her neck and arms.
-        </p>
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 💐🦄</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    25 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Genderfluid
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Gay
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ASD & OCD
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            She lives in the nearby enchanted forest, and has the ability to charm anyone with his beautiful eyes. Aloof, quiet, and passionate.
-        </p>
-        <p>
-            <strong>Likes:</strong> Tarot, dream interpreting, Celtic folklore and fairytales, plants and fungi, fruity cocktails
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/florence/florence3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/florence/thumbnail/florence3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/florence/florence2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/florence/thumbnail/florence2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/florence/florence1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/florence/thumbnail/florence1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

@@ -1,154 +1,48 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Jazz
 pronouns: he/him
 thumbnail: jazz.png
+banner: Placeholder.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["douglas cuddle toys", "dlux", "zebra", "horse", "ungulate", "secondhand", "ebay", "online"]
+tags:
+    - douglas cuddle toys
+    - dlux
+    - zebra
+    - horse
+    - ungulate
+    - secondhand
+    - ebay
+    - online
+bio:
+    pronouns: He/him
+    brand: Douglas Cuddle Toys
+    collection: DLux
+    name: Zelda
+    species: Zebra
+    acquired: Ebay
+    description:
+        - Physical description text goes here...
+    extra:
+        - Extra info goes here...
+
+lore:
+    name: Jazz
+    emoji: 🎹🎶
+    age: ?? yrs
+    gender: ????
+    orientation: ????
+    disabilities: ????
+    bio:
+        - Bio goes here
+    likes:
+        - Interest
+        - interest
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/jazz/jazz2.jpg
+          thumbnail: /img/profile/gallery/jazz/thumbnail/jazz2.png
+        - fullimg: /img/profile/gallery/jazz/jazz1.jpg
+          thumbnail: /img/profile/gallery/jazz/thumbnail/jazz1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Douglas Cuddle Toys
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    DLux
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    Zelda
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                   Zebra
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Ebay
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/placeholder.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🎹🎶</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                   ?? yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    ???
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    ???
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ???
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Description
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Interest
-        </p>
-
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/jazz/jazz2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/jazz/thumbnail/jazz2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/jazz/jazz1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/jazz/thumbnail/jazz1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

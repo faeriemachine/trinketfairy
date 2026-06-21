@@ -1,157 +1,49 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Cesar
 pronouns: he/they
 thumbnail: cesar.png
+banner: Cesar.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["douglas cuddle toys", "tabby", "cat", "feline", "local small business", "in store"]
+tags:
+    - douglas cuddle toys
+    - tabby
+    - cat
+    - feline
+    - local small business
+    - in store
+bio:
+    pronouns: He/him + they/them
+    brand: Douglas Cuddle Toys
+    collection: 9 inch cats
+    name: Adele
+    species: Domestic cat (Orange tabby)
+    acquired: Local baby store
+    description:
+        - Physical description text goes here...
+    extra:
+        - N/A
+
+lore:
+    name: Cesar
+    emoji: 🤠🐈
+    age: 27 yrs
+    gender: Transmasc
+    orientation: Bisexual
+    disabilities: TBI
+    bio:
+        - Community gardener of Mended Wings, wishes to own a ranch some day. In a relationship with Tashi.
+    likes:
+        - Warm weather
+        - sunbathing
+        - gardening
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/cesar/cesar3.jpg
+          thumbnail: /img/profile/gallery/cesar/thumbnail/cesar3.png
+        - fullimg: /img/profile/gallery/cesar/cesar2.jpg
+          thumbnail: /img/profile/gallery/cesar/thumbnail/cesar2.png
+        - fullimg: /img/profile/gallery/cesar/cesar1.jpg
+          thumbnail: /img/profile/gallery/cesar/thumbnail/cesar1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him + they/them
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Douglas Cuddle Toys
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    9 inch cats
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    Adele
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Domestic cat (Orange Tabby)
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Local baby store
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/{{title}}.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🤠🐈</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    27 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Transmasc
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Bisexual
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    TBI
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            Community gardener of Mended Wings, wishes to own a ranch some day. In a relationship with <a href="/plush/tashi">Tashi</a>.
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Warm weather, sunbathing
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-        <a href="/img/profile/gallery/cesar/cesar3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/cesar/thumbnail/cesar3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/cesar/cesar2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/cesar/thumbnail/cesar2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/cesar/cesar1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/cesar/thumbnail/cesar1.png" alt="image" />
-        </a>
-
-    </article>
-</div>

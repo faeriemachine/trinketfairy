@@ -1,179 +1,59 @@
 ---
-layout: layouts/profile.njk
+layout: layouts/profileTwo.html
 title: Knoxville
 pronouns: he/him
 thumbnail: knoxville.png
+banner: Placeholder.png
 permalink: "/plush/{{page.fileSlug}}.html"
-tags: ["jellycat", "fox", "canine", "indigo", "in store"]
+tags:
+    - jellycat
+    - fox
+    - canine
+    - indigo
+    - in store
+bio:
+    pronouns: He/him
+    brand: Jellycat
+    collection: Bashful (Medium)
+    name: N/A
+    species: Red fox
+    acquired: Indigo
+    description:
+        - Physical description text goes here...
+    extra:
+        - Named after Johnny Knoxville of Jackass fame.
+
+lore:
+    name: Knoxville
+    emoji: 🛹💣
+    age: 32 yrs
+    gender: Cis man
+    orientation: Pansexual
+    disabilities: ASPD
+    bio:
+        - World famous skateboarder and dare devil.
+    likes:
+        - Skateboarding
+        - roller coasters
+        - comic books and cartoons
+        - racecars
+        - spaghetti & meatballs
+        - thriller movies
+
+gallery:
+    images:
+        - fullimg: /img/profile/gallery/knoxville/knoxville7.jpg
+          thumbnail: /img/profile/gallery/knoxville/thumbnail/knoxville7.png
+        - fullimg: /img/profile/gallery/knoxville/knoxville6.jpg
+          thumbnail: /img/profile/gallery/knoxville/thumbnail/knoxville6.png
+        - fullimg: /img/profile/gallery/knoxville/knoxville5.jpg
+          thumbnail: /img/profile/gallery/knoxville/thumbnail/knoxville5.png
+        - fullimg: /img/profile/gallery/knoxville/knoxville4.jpg
+          thumbnail: /img/profile/gallery/knoxville/thumbnail/knoxville4.png
+        - fullimg: /img/profile/gallery/knoxville/knoxville3.jpg
+          thumbnail: /img/profile/gallery/knoxville/thumbnail/knoxville3.png
+        - fullimg: /img/profile/gallery/knoxville/knoxville2.jpg
+          thumbnail: /img/profile/gallery/knoxville/thumbnail/knoxville2.png
+        - fullimg: /img/profile/gallery/knoxville/knoxville1.jpg
+          thumbnail: /img/profile/gallery/knoxville/thumbnail/knoxville1.png
 ---
-<link rel="stylesheet" href="/css/profile.css{{ nocache }}" />
-<div id="bio" class="city">
-    <article class="plushinfo">
-        <div class="photo">
-            <img class="image" src="../img/profile/{{title}}.png" alt="{{title}}">
-        </div>
-        <div class="bio">
-            <h1>{{ title }}</h1>
-            <div class="info">
-                <div id="text" class="field">Pronouns</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    He/him
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Brand</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-trademark"></i>
-                    </div>
-                    Jellycat
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Collection</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    Bashful medium
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Original Name</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
-                    N/A
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Species</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                    Red fox
-                </span>
-            </div>
-            <div class="info">
-                <div id="text" class="field">Acquired</div> <br>
-                <span class="answer">
-                    <div class="side">
-                        <i class="fa-solid fa-money-bill-1-wave"></i>
-                    </div>
-                    Indigo
-                </span>
-            </div>
-        </div>
-    </article>
-    <hr>
-    <article class="plushdesc">
-
-        <h2>Description</h2>
-        <p>
-            Description.
-        </p>
-
-        <h2>Extra</h2>
-
-        <ul>
-            <li>Named after Johnny Knoxville of <a href="https://en.wikipedia.org/wiki/Jackass_(franchise)">Jackass</a> fame</li>
-        </ul>
-
-    </article>
-</div>
-
-<div id="lore" class="city" style="display:none">
-    <article class="plushdesc">
-        <img class="banner" src="/img/profile/banner/placeholder.png" style="width: 100%;" alt="banner">
-        <h1 class="loretitle">{{ title }} 🛹💣</h1>
-
-        <article class="trivia">
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
-                    32 yrs
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-mars-and-venus"></i>
-                    </div>
-                    Cis man
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    Pansexual
-            </span>
-
-            <span class="answer lore">
-                    <div class="side">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                    </div>
-                    ASPD
-            </span>
-        </article>
-
-        <hr>
-
-        <p>
-            World famous skateboarder and dare devil.
-        </p>
-
-        <p>
-            <strong>Likes:</strong> Skateboarding, roller coasters, comic books and cartoons, racecars, spaghetti and meatballs, thriller movies
-        </p>
-    </article>
-</div>
-
-
-<div id="gallery" class="city" style="display:none">
-    <article style="text-align: center;">
-        <h1 class="galtitle">Gallery</h1>
-
-        <p>
-            Ordered in reverse-chronological order. <br>
-            Click each thumbnail to see the full image.
-        </p>
-    </article>
-
-    <article class="images">
-
-
-        <a href="/img/profile/gallery/knoxville/knoxville7.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/knoxville/thumbnail/knoxville7.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/knoxville/knoxville6.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/knoxville/thumbnail/knoxville6.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/knoxville/knoxville5.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/knoxville/thumbnail/knoxville5.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/knoxville/knoxville4.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/knoxville/thumbnail/knoxville4.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/knoxville/knoxville3.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/knoxville/thumbnail/knoxville3.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/knoxville/knoxville2.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/knoxville/thumbnail/knoxville2.png" alt="image" />
-        </a>
-
-        <a href="/img/profile/gallery/knoxville/knoxville1.jpg" class="glightbox">
-            <img class="galimg" src="/img/profile/gallery/knoxville/thumbnail/knoxville1.png" alt="image" />
-        </a>
-    </article>
-</div>
