@@ -1,0 +1,87 @@
+:root{
+  /* Colours */
+  --bg: #E3E0AB;
+  --text: #242626;
+  --link: #801F09;
+  --link-hover: #f1325c;
+  --border: #185e3d;
+  --header: #9ad98d;
+  --txt-shadow: #A37130;
+  --answer: #D3CE6D;
+  --field: #C4FFEE;
+  --shadow: #e1a080;
+  --gradient-one: #A37130;
+  --gradient-two: #DCDA74;
+}
+
+body {
+    color: var(--text);
+    background-image:url('/img/bg2.jpg');
+}
+
+/* Header text */
+h1 {
+  color: var(--header);
+}
+
+/* Links */
+a {
+  color: var(--link);
+}
+
+a:hover{
+  color: var(--link-hover);
+}
+
+/* Selection */
+::selection{
+  background-color:#e1a080;
+  text-shadow: -1px -1px 0 var(--txt-shadow), 1px -1px 0 var(--txt-shadow), -1px 1px 0 var(--txt-shadow), 1px 1px 0 var(--txt-shadow);
+  color: white;
+}
+
+/* Form selection */
+form select{
+  background-color: var(--border);
+}
+
+/* Font Awesome Outlinks */
+.outlink {
+    background-color: var(--border);
+}
+
+.outlink:hover{
+    background-color: var(--link);
+}
+
+header {
+  text-align: center;
+}
+
+/* Divider */
+hr{
+  border: 2px dashed var(--border);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg);
+    border: 3px dashed var(--border);
+    box-shadow: 0 0 0 6px var(--bg);
+}
+
+/* Main content */
+main {
+    background-color: var(--bg);
+    border: 3px dashed var(--border);
+    box-shadow: 0 0 0 6px var(--bg);
+}
+
+/* Tooltip */
+.tippy-box[data-theme~='tf'] {
+  background-color: var(--txt-shadow);
+}
+
+.tippy-box[data-theme~='tf'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--txt-shadow);
+}

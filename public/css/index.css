@@ -1,9 +1,10 @@
 .link{
+  color: white;
   position: absolute;
   font-size: 2em;
   right: 8px;
   bottom: -40px;
-  text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -2px 2px 2px #000, 3px 3px 2px #000;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
 }
 
 /* Mobile */

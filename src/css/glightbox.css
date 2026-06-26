@@ -511,7 +511,6 @@ iframe.wait-autoplay {
 .glightbox-clean .gslide-title {
   font-size: 1.5em;
   font-weight: bold;
-  font-family: Mali;
   text-align: center;
   color: #fff;
   margin-top: 19px;
@@ -520,9 +519,9 @@ iframe.wait-autoplay {
 }
 
 .glightbox-clean .gslide-desc {
-  font-size: 0.86em;
+  text-align: center;
+  font-size: 1.25em;
   margin-bottom: 0;
-  font-family: Atkinson Hyperlegible;
   color: #fff;
   line-height: 1.4em;
 }
@@ -878,7 +877,7 @@ iframe.wait-autoplay {
   }
   .gslide-image img {
     max-height: 97vh;
-    max-width: 100%;
+    max-width: 85%;
   }
   .gslide-image img.zoomable {
     cursor: -webkit-zoom-in;

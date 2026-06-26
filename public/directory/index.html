@@ -7,6 +7,15 @@
 
   <!-- styles css -->
   <link rel="stylesheet" href="/css/style.css" />
+  <!-- style switcher --->
+      <link rel="stylesheet" type="text/css" media="screen" title="light" href="/css/light.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="dark" href="/css/dark.css" />
+    <script src="/js/styleswitch.js" type="text/javascript">
+    /***********************************************
+    * Style Sheet Switcher v1.1- (c) Dynamic Drive DHTML code library
+    * Please keep this notice intact
+    ***********************************************/
+    </script>
   <!-- tooltip css -->
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
 
@@ -53,6 +62,14 @@
         <header>
             <img class="navlogo" src="/img/logo.png">
         </header>
+
+        <h2>Settings</h2>
+        <form id="switchform" aria-label="styleswitcher">
+	        <select name="switchcontrol" id="siteswitcher" size="1" onChange="chooseStyle(this.options[this.selectedIndex].value, 60)">
+		        <option value="light">light</option>
+                <option value="dark">dark</option>
+	        </select>
+        </form>
 
         <h2>Search by Tag</h2>
 
@@ -118,8 +135,10 @@
                     <li class="tags"><a class="tags" href="/plush/tagged/bengal/">#bengal</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/border-collie/">#border collie</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/calico/">#calico</a></li>
+                    <li class="tags"><a class="tags" href="/plush/tagged/gryphon/">#gryphon</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/husky/">#husky</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/kai-ken/">#kai ken</a></li>
+                    <li class="tags"><a class="tags" href="/plush/tagged/kitsune/">#kitsune</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/st bernard/">#st bernard</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/tabby/">#tabby</a></li>
                 </ul>
@@ -167,7 +186,7 @@
                     <li class="tags"><a class="tags" href="/plush/tagged/insect/">#insect</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/lagomorph/">#lagomorph</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/monster/">#monster</a></li>
-                    <li class="tags"><a class="tags" href="/plush/tagged/insect/">#mythical</a></li>
+                    <li class="tags"><a class="tags" href="/plush/tagged/mythical/">#mythical</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/prehistoric/">#prehistoric</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/primate/">#primate</a></li>
                     <li class="tags"><a class="tags" href="/plush/tagged/ungulate/">#ungulate</a></li>
@@ -229,8 +248,6 @@
             <a href="https://www.tumblr.com/trinketfairy/" target="_blank" class="outlink fa-brands fa-tumblr" rel="me" data-tippy-content="Tumblr"></a>
             <a href="https://www.instagram.com/faeriemachine/" target="_blank" class="outlink fa-brands fa-instagram" rel="me" data-tippy-content="Instagram"></a>
             <a href="http://tiktok.com/@faeriemachine" target="_blank" class="outlink fa-brands fa-tiktok" rel="me" data-tippy-content="TikTok"></a>
-            <a href="https://plush.city/@faeriemachine" target="_blank" class="outlink fa-brands fa-mastodon" rel="me" data-tippy-content="Mastodon"></a>
-            <a href="https://docs.google.com/document/d/1m2zGYzyu5ti4wQlvEMsHOA8goTdu7HuWg7_Cb4Wwcos/edit?usp=sharing" target="_blank" class="outlink fa-solid fa-magnifying-glass" rel="me" data-tippy-content="In Search Of list"></a>
     </div>
 </body>
 
@@ -567,6 +584,15 @@
                     </figcaption>
                 </figure>
         
+            <a href="/plush/pegasus.html">
+                <figure>
+                    <img class="thumb" src="/img/thumbnail/pegasus.png" loading="lazy" />
+            </a>
+                    <figcaption>
+                        Pegasus • they/them
+                    </figcaption>
+                </figure>
+        
             <a href="/plush/pilchard.html">
                 <figure>
                     <img class="thumb" src="/img/thumbnail/pilchard.png" loading="lazy" />
@@ -600,6 +626,15 @@
             </a>
                     <figcaption>
                         Poutine • she/her
+                    </figcaption>
+                </figure>
+        
+            <a href="/plush/prosper.html">
+                <figure>
+                    <img class="thumb" src="/img/thumbnail/prosper.png" loading="lazy" />
+            </a>
+                    <figcaption>
+                        Prosper • he/him
                     </figcaption>
                 </figure>
         
@@ -827,7 +862,7 @@
 <footer>
   Est. 2026
 <br>
-<a href="/credits/">Credits</a> & <a href="/about/">about</a> & <a href="/faq/">FAQ</a>
+<a href="/credits/">Credits</a> & <a href="/about/">About</a> & <a href="/faq/">FAQ</a> & <a href="/iso/">ISO</a>
 <br>
 <p>
     <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="180" height="38"></iframe>

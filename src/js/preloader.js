@@ -6,5 +6,5 @@ function preloader() {
 
 function showPage() {
   document.getElementById("loader").classList.add('hidden');
-  document.getElementById("loaded").classList.add('visible');
+  document.getElementById("loaded").classList.add('visible', 'transition');
 }

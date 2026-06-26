@@ -1,0 +1,182 @@
+---
+layout: base.njk
+---
+<link rel="stylesheet" href="/css/iso.css{{ nocache }}" />
+
+<body onload="preloader()">
+  <div id="loader"></div>
+
+<div id="loaded">
+
+    <header>
+        <a href="/directory">
+            {% include "partials/header.njk" %}
+        </a>
+    </header>
+
+    <main>
+        <article class="info">
+            <h2>{{ title }}</h2>
+
+            <p>
+                Thanks for taking a look at my In Search Of list! I love buying and trading from other collectors who may possibly have what I’m looking for, so I figured I'd make a section on my website dedicated to what I'm looking for.
+            </p>
+
+            <p>
+                Please click the thumbnails to see full versions of each image and a description of each item.
+            </p>
+            <p>
+                <strong>This list is subject to change,</strong> please make sure to refresh for the latest update.
+            </p>
+            <p>
+            <p><strong>Last updated:</strong> {{ page.date.toLocaleString( undefined, { year: 'numeric', month: 'long', day: 'numeric' }) }}</p>
+            </p>
+
+            <hr>
+
+            <h3>Information</h3>
+
+            <p>
+                <strong>Notice March 29th 2026:</strong> I'm going to be moving house within the next year, and may not be able to obtain many new items from now until then. Please still feel free to reach out if you happen to have an ISO of mine that you have UFS/UFT, but just know that I may not be able to accept any offers any time soon depending on what it is.
+            </p>
+
+            <ul>
+                <li>
+                    I am currently located in Eastern Ontario, Canada.
+                </li>
+                <li>
+                    Many of items are easily accessible and are only on here for my own reference.
+                </li>
+                <li>
+                    I prefer to combine items together in a single package to make Canadian shipping rates easier on me, please let me know of any bundling opportunities.
+                </li>
+                <li>
+                    Ask me about trades for other items (including pickups), <a href="https://tri4ge.icu/">artwork</a>, etc.
+                </li>
+                <li>
+                    I’m not picky about the items on this list being tagged or NIB, <em>unless stated otherwise.</em>
+                </li>
+                <li>
+                    I do prefer my items to be in used-but-good condition, but I am willing to take B/C grade items if they’re listed for a cheaper price <em>and</em> any needed repairs are feasible. I also prefer to buy secondhand.
+                </li>
+                <li>
+                    I mostly only pay in either CAD or USD, and will almost always have it shipped to Canada. Please let me know if this is an issue.
+                </li>
+                <li>
+                    <strong>Payments made with PayPal or eTransfer only</strong>, I do not have access to Cashapp, Venmo or Zelle.
+                </li>
+                <li>
+                    <strong>I do not have access to Mercari, Depop or Vinted</strong>, please don't send me links from any of these sites.
+                </li>
+                <li>
+                    Items listed as <strong>grails</strong> are items that I prioritize the most, and would be willing to pay higher prices for (within reason, of course.)
+                </li>
+            </ul>
+        </article>
+    </main>
+
+    <div class="iso">
+        {% if gallery and not gallery.length %}
+            {% set gallerySections = gallery | dictsort %}
+            {% set sections = [] %}
+
+            {% for key, section in gallerySections %}
+                {% if section.items and section.items.length > 0 %}
+                    {% set sections = sections.concat([section]) %}
+                {% endif %}
+            {% endfor %}
+
+            {% set sections = sections | sort(attribute='order') %}
+            {% for section in sections %}
+        {% set galleryIndex = loop.index %}
+        <h1>{{ section.label }}</h1>
+        <div class="gallery">
+            <div class="flex">
+            {% for item in section.items %}
+                <div class="thumb">
+                    <a href="{{ item.url }}" class="glightbox" data-gallery="gallery{{ galleryIndex }}" data-type="image" {% if item.description %}data-glightbox="title: {{ item.title }}; description: {{ item.description }}"{% endif %}>
+                        <img class="galimg" src="{{ item.thumbnail }}" alt="image"/>
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+        {% if not loop.last %}<hr class="divide">{% endif %}
+        {% endfor %}
+        {% endif %}
+    </div>
+
+    <footer>
+    {% include "partials/footer.njk" %}
+    {% block head %}{% endblock %}
+    </footer>
+
+</div>
+
+<link rel="stylesheet" href="/css/glightbox.css" />
+
+<script src="/js/glightbox.min.js"></script>
+<script type="text/javascript">
+    import '/js/glightbox.js';
+</script>
+<script>
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        // If player is not ready
+                        player.on('ready', (event) => {
+                            // Do something when video is ready
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            /* var exampleApi = GLightbox({ selector: null });
+            exampleApi.insertSlide({
+                href: 'https://picsum.photos/1200/800',
+            });
+            exampleApi.insertSlide({
+                width: '500px',
+                content: '<p>Example</p>'
+            });
+            exampleApi.insertSlide({
+                href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+            });
+            exampleApi.insertSlide({
+                width: '200vw',
+                content: document.getElementById('inline-example')
+            });
+            exampleApi.open(); */
+</script>
+</body>
