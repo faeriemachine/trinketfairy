@@ -127,6 +127,10 @@
   text-align: center;
 }
 
+.glightbox:hover{
+  letter-spacing: 0;
+}
+
 .galimg{
   box-shadow: 0px 0px 5px 1px black;
   transition: all 0.5s ease;
